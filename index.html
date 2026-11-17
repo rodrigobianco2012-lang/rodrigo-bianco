@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rodrigo Bianco — Músico, Compositor e Artista Visual</title>
-  <meta name="description" content="Conheça Rodrigo Bianco: músico independente, compositor, artista visual e hair stylist com trajetória internacional no Chile, entrevistado pela Rádio Agricultura e com presença na imprensa e no mercado musical chileno.">
+  <title>Rodrigo Bianco | Músico, Compositor e Artista Visual</title>
+  <meta name="description" content="Perfil de Rodrigo Bianco: músico, compositor, artista visual e hair stylist com trajetória internacional no Chile, participação na Rádio Agricultura e presença na mídia.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0f1115">
+  <meta name="theme-color" content="#0d1117">
   <link rel="canonical" href="https://rodrigobianco2012-lang.github.io/rodrigo-bianco/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rodrigo Bianco — Músico, Compositor e Artista Visual">
-  <meta property="og:description" content="Música independente, artes visuais, trajetória profissional no Chile e presença na imprensa.">
+  <meta property="og:title" content="Rodrigo Bianco | Músico, Compositor e Artista Visual">
+  <meta property="og:description" content="Perfil de Rodrigo Bianco: música, arte visual, trabalho internacional no Chile e presença na imprensa.">
   <meta property="og:url" content="https://rodrigobianco2012-lang.github.io/rodrigo-bianco/">
   <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Rodrigo Bianco — Músico, Compositor e Artista Visual">
-  <meta name="twitter:description" content="Música independente, artes visuais e trajetória profissional no Chile.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rodrigo Bianco | Músico, Compositor e Artista Visual">
+  <meta name="twitter:description" content="Música, arte visual e trajetória profissional no Chile.">
 
   <script type="application/ld+json">
   {
@@ -25,12 +25,9 @@
     "@id": "https://rodrigobianco2012-lang.github.io/rodrigo-bianco/#person",
     "name": "Rodrigo Bianco",
     "alternateName": "Rodrigo Bianco de Almeida",
-    "description": "Músico independente, compositor, artista visual e hair stylist brasileiro com trajetória profissional no Chile, presença na imprensa e conexão com o mercado musical latino-americano.",
+    "description": "Músico independente, compositor, artista visual e hair stylist brasileiro com trajetória profissional no Chile, presença na mídia e atuação em eventos de alto nível.",
     "url": "https://rodrigobianco2012-lang.github.io/rodrigo-bianco/",
-    "nationality": {
-      "@type": "Country",
-      "name": "Brazil"
-    },
+    "nationality": { "@type": "Country", "name": "Brazil" },
     "homeLocation": {
       "@type": "Place",
       "address": {
@@ -46,12 +43,12 @@
       {
         "@type": "Occupation",
         "name": "Músico e compositor",
-        "description": "Produção musical independente com música disponível no Spotify."
+        "description": "Produção musical independente com catálogo no Spotify."
       },
       {
         "@type": "Occupation",
         "name": "Hair stylist",
-        "description": "Atuação profissional no Chile, incluindo trabalho na Gala de Viña del Mar de 2019."
+        "description": "Atuação profissional no Chile e participação em eventos de grande prestígio."
       }
     ],
     "knowsAbout": [
@@ -63,6 +60,7 @@
       "Pintura a óleo"
     ],
     "sameAs": [
+      "https://open.spotify.com/track/66XxcmmSkL57yxxc1ELytd",
       "https://www.instagram.com/rodrigo_bianco2026",
       "https://www.facebook.com/share/1AAv73fMHX/?mibextid=wwXIfr"
     ]
@@ -71,181 +69,517 @@
 
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #0f1115;
-      --card: #181b22;
-      --text: #f1f5f9;
-      --muted: #b0bdcc;
-      --accent: #eab308;
-      --border: #343b49;
-      --link-bg: #232834;
+      --bg: #0b0f14;
+      --bg-2: #131922;
+      --panel: rgba(17, 23, 31, 0.9);
+      --panel-strong: #141b24;
+      --text: #edf2f7;
+      --muted: #b1c0d2;
+      --gold: #f4c95d;
+      --gold-soft: #f5d98a;
+      --line: rgba(255,255,255,0.09);
+      --chip: rgba(255,255,255,0.04);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
     }
 
-    *, *::before, *::after { box-sizing: border-box; }
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      padding: 2rem 1rem;
-      background: var(--bg);
-      color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.65;
+      background:
+        radial-gradient(circle at top, rgba(244, 201, 93, 0.12), transparent 28%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      color: var(--text);
+      line-height: 1.7;
     }
+
+    img { max-width: 100%; display: block; }
     a { color: inherit; }
-    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
-    .container { width: min(100%, 780px); margin-inline: auto; }
-    .card {
-      margin-bottom: 1.5rem;
-      padding: 2rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
+    a:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
     }
-    .site-header { padding: 3rem 1.5rem; text-align: center; }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 18px 0 10px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #e6a800);
+      box-shadow: 0 0 18px rgba(244, 201, 93, 0.8);
+    }
+
+    .hero {
+      padding: 36px 0 18px;
+    }
+
+    .hero-shell {
+      background: linear-gradient(180deg, rgba(20,27,36,0.95), rgba(15,18,23,0.92));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-shell::before {
+      content: "";
+      position: absolute;
+      inset: -30% auto auto -10%;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(244, 201, 93, 0.18), transparent 55%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold-soft);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
     h1 {
-      margin: 0 0 .5rem;
-      font-size: clamp(2rem, 7vw, 2.7rem);
-      letter-spacing: -.02em;
-      line-height: 1.2;
+      margin: 0;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+      font-weight: 800;
     }
-    .subtitle { margin: 0 0 1.5rem; color: var(--accent); font-size: 1.05rem; font-weight: 600; }
-    .social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
-    .social-links a {
-      min-height: 44px;
+
+    .accent {
+      color: var(--gold);
+    }
+
+    .subtitle {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 650px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: .6rem 1.25rem;
-      border: 1px solid var(--border);
+      min-height: 46px;
+      padding: 0 18px;
       border-radius: 999px;
-      background: var(--link-bg);
+      border: 1px solid var(--line);
       text-decoration: none;
-      transition: border-color .2s, color .2s;
+      font-weight: 700;
+      transition: transform 0.2s ease, border-color 0.2s ease;
     }
-    .social-links a:hover { border-color: var(--accent); color: var(--accent); }
-    h2 {
-      margin: 0 0 1rem;
-      padding-bottom: .5rem;
-      border-bottom: 1px solid var(--border);
-      color: var(--accent);
-      font-size: 1.3rem;
-      line-height: 1.35;
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--gold), #f0b600);
+      color: #111;
+      border-color: transparent;
+      box-shadow: 0 10px 30px rgba(244, 201, 93, 0.3);
     }
-    p { margin: 0 0 1rem; color: #e2e8f0; }
-    p:last-child { margin-bottom: 0; }
-    .lang-tag {
-      display: inline-block;
-      margin-bottom: .6rem;
-      color: var(--muted);
-      font-size: .75rem;
-      letter-spacing: .05em;
+    .btn.secondary {
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+    }
+
+    .profile-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile-image {
+      aspect-ratio: 4 / 5;
+      background: linear-gradient(180deg, rgba(244,201,93,0.12), rgba(255,255,255,0.03));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-soft);
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
+      overflow: hidden;
     }
-    .highlight-box {
-      margin-top: 1.5rem;
-      padding: 1rem 1.25rem;
-      border-left: 3px solid var(--accent);
-      border-radius: 0 8px 8px 0;
-      background: #13161c;
+
+    .profile-meta {
+      margin-top: 14px;
     }
-    .media-list {
-      margin: 0;
-      padding-left: 1.2rem;
-      color: #e2e8f0;
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
     }
-    .media-list li { margin-bottom: .85rem; }
-    .media-list a {
-      color: var(--accent);
+
+    .meta-row strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 18px 0;
+    }
+
+    .panel {
+      background: rgba(17, 23, 31, 0.82);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px 22px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(1.5rem, 2vw, 2.2rem);
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.02rem;
+      margin-bottom: 18px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .stat {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--gold-soft);
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 9px 12px;
+      font-size: 0.84rem;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .media-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      min-height: 100%;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .media-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(244, 201, 93, 0.5);
+    }
+
+    .media-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+    }
+
+    .media-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .media-card a {
+      color: var(--gold-soft);
       text-decoration: none;
+      font-weight: 700;
     }
-    .media-list a:hover { text-decoration: underline; }
-    .highlights { margin: 0; padding-left: 1.25rem; }
-    .highlights li { margin-bottom: .75rem; color: #e2e8f0; }
-    .highlights li:last-child { margin-bottom: 0; }
-    .spotify-embed { display: block; width: 100%; max-width: 100%; border: 0; border-radius: 12px; }
-    footer { padding: .5rem 1rem 1rem; color: var(--muted); font-size: .875rem; text-align: center; }
-    @media (max-width: 520px) {
-      body { padding: 1rem .75rem; }
-      .card { padding: 1.25rem; border-radius: 12px; }
-      .site-header { padding: 2rem 1rem; }
-      .social-links { gap: .5rem; }
-      .social-links a { padding-inline: 1rem; }
+
+    .media-card a:hover { text-decoration: underline; }
+
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 14px;
     }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { transition-duration: .01ms !important; }
+
+    .list li {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      color: var(--text);
+    }
+
+    .list strong {
+      color: var(--gold-soft);
+    }
+
+    .spotify-wrap {
+      margin-top: 18px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #0f1721;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      border: 0;
+      border-radius: 18px;
+    }
+
+    footer {
+      padding: 28px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid, .two-col, .media-grid, .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-shell {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: clamp(2.3rem, 11vw, 4rem);
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header class="card site-header">
-      <h1>Rodrigo Bianco</h1>
-      <p class="subtitle">Músico independente · Compositor · Artista visual · Hair stylist internacional</p>
-      <nav class="social-links" aria-label="Redes sociais e música">
-        <a href="https://open.spotify.com/track/66XxcmmSkL57yxxc1ELytd" target="_blank" rel="noopener noreferrer">Spotify</a>
-        <a href="https://www.instagram.com/rodrigo_bianco2026" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.facebook.com/share/1AAv73fMHX/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
-      </nav>
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        Rodrigo Bianco
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="hero-shell">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Perfil de artista</span>
+            <h1>Rodrigo <span class="accent">Bianco</span></h1>
+            <p class="subtitle">
+              Músico independente, compositor, artista visual e hair stylist com trajetória internacional no Chile,
+              presença na mídia e diálogo com o mercado musical latino-americano.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="https://open.spotify.com/track/66XxcmmSkL57yxxc1ELytd" target="_blank" rel="noopener noreferrer">Ouvir no Spotify</a>
+              <a class="btn secondary" href="https://www.instagram.com/rodrigo_bianco2026" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-image">RB</div>
+            <div class="profile-meta">
+              <div class="meta-row"><span>Atuação</span><strong>Música / Arte / Estética</strong></div>
+              <div class="meta-row"><span>Origem</span><strong>Brasil</strong></div>
+              <div class="meta-row"><span>Experiência</span><strong>Chile</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section class="card" aria-labelledby="musica-heading">
-        <h2 id="musica-heading">Música no Spotify</h2>
-        <iframe
-          class="spotify-embed"
-          src="https://open.spotify.com/embed/track/66XxcmmSkL57yxxc1ELytd?utm_source=generator&amp;theme=0"
-          title="Ouça a música de Rodrigo Bianco no Spotify"
-          height="152"
-          loading="lazy"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
+      <section class="section">
+        <div class="panel">
+          <h2>Sobre</h2>
+          <p class="lead">
+            Rodrigo Bianco é um artista brasileiro multifacetado, cuja trajetória conecta música independente,
+            artes visuais, estética e experiência internacional. A sua passagem no Chile fortaleceu a visão
+            criativa e profissional, trazendo uma identidade que atravessa arte, cultura e atuação em eventos de alto nível.
+          </p>
 
-      <section class="card" aria-labelledby="biografia-heading">
-        <h2 id="biografia-heading">Biografia</h2>
-        <span class="lang-tag">Português (Brasil)</span>
-        <p><strong>Rodrigo Bianco</strong> é um artista brasileiro multifacetado cuja trajetória conecta a música independente, as artes visuais e o trabalho na área da estética e de eventos.</p>
-        <p>Ao longo da sua carreira, desenvolveu uma presença marcante na atuação cultural e profissional no Chile, onde trabalhou diretamente no universo da beleza, da produção de eventos e dos bastidores de grandes produções televisivas. Sua experiência mais destacada foi na <strong>Gala do Festival Internacional da Canção de Viña del Mar (2019)</strong>, quando integrou a equipe da <strong>Casa Filippa Peluquería</strong> e realizou os penteados de <strong>Mariana Derderián</strong> e <strong>Jenny Cavallo</strong>, no programa <em>Bienvenidos</em> (Canal 13).</p>
-        <p>Além do trabalho neste cenário, Rodrigo também foi entrevistado pela <strong>Rádio Agricultura</strong>, no programa de <strong>Pedro Carcuro</strong>. Na conversa, ele compartilhou sua experiência no Chile e sua visão sobre o mercado musical chileno, refletindo sobre a cultura, as oportunidades do setor e a forma como percebeu o país desde a perspectiva artística e profissional.</p>
-        <p>Hoje, de volta ao Brasil, canaliza essa vivência internacional em sua música, em sua produção criativa e em sua expressão artística, mantendo ligação com as duas culturas e trazendo uma identidade que atravessa música, beleza, imagem e sensibilidade visual.</p>
+          <div class="two-col">
+            <div>
+              <p>
+                Durante mais de uma década residindo no Chile, atuou no universo da beleza e dos bastidores de grandes produções televisivas.
+                Participou da equipe da <strong>Casa Filippa Peluquería</strong> na <strong>Gala de Viña del Mar 2019</strong>, onde realizou os penteados de
+                <strong>Mariana Derderián</strong> e <strong>Jenny Cavallo</strong>, no programa <em>Bienvenidos</em> (Canal 13).
+              </p>
+            </div>
+            <div>
+              <p>
+                Além do trabalho em eventos, Rodrigo foi entrevistado pela <strong>Rádio Agricultura</strong>, no programa de <strong>Pedro Carcuro</strong>, falando sobre sua experiência no Chile e sua visão do mercado musical chileno.
+                Hoje, vive o próximo capítulo da sua trajetória no Brasil, reunindo cultura, arte e produção musical.
+              </p>
+            </div>
+          </div>
 
-        <div class="highlight-box" lang="es-CL">
-          <span class="lang-tag">Español (Chile / Latinoamérica)</span>
-          <p><strong>Rodrigo Bianco</strong> es músico independiente, compositor, artista visual y estilista con trayectoria profesional en Chile. Participó en la <strong>Gala de Viña del Mar 2019</strong> como parte del equipo de <strong>Casa Filippa Peluquería</strong>, realizando peinados para <strong>Mariana Derderián</strong> y <strong>Jenny Cavallo</strong> en <em>Bienvenidos</em> (Canal 13). Además, fue entrevistado por <strong>Radio Agricultura</strong> en el programa de <strong>Pedro Carcuro</strong>, donde compartió su experiencia en Chile y su visión del mercado musical chileno. Hoy sigue desarrollando su proyecto musical en Spotify.</p>
+          <div class="tags" aria-label="Áreas de atuação">
+            <span class="tag">Música</span>
+            <span class="tag">Composição</span>
+            <span class="tag">Artes Visuais</span>
+            <span class="tag">Hair Styling</span>
+            <span class="tag">Chile</span>
+            <span class="tag">Mercado Musical</span>
+          </div>
         </div>
       </section>
 
-      <section class="card" aria-labelledby="midia-heading">
-        <h2 id="midia-heading">Na mídia</h2>
-        <ul class="media-list">
-          <li>
-            <a href="https://www.youtube.com/shorts/4mH8A-KYArg" target="_blank" rel="noopener noreferrer">
-              Vídeo curto no YouTube — entrevista e visão sobre a experiência em Chile e o mercado musical chileno
-            </a>
-          </li>
-          <li>
-            <a href="https://www.revistasarah.cl/gala-caldirola-la-bella-espanola-que-chile/" target="_blank" rel="noopener noreferrer">
-              Matéria na Revista Sarah — cobertura da Gala Caldirola e contexto da atuação internacional em eventos de prestígio
-            </a>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="panel">
+          <h2>Trajetória</h2>
+          <div class="stats">
+            <div class="stat">
+              <strong>2019</strong>
+              <span>Gala de Viña del Mar</span>
+            </div>
+            <div class="stat">
+              <strong>Brasil</strong>
+              <span>Projeto musical atual</span>
+            </div>
+            <div class="stat">
+              <strong>Spotify</strong>
+              <span>Presença musical</span>
+            </div>
+          </div>
+
+          <div class="spotify-wrap" style="margin-top: 22px;">
+            <iframe
+              src="https://open.spotify.com/embed/track/66XxcmmSkL57yxxc1ELytd?utm_source=generator&theme=0"
+              title="Spotify — Rodrigo Bianco"
+              height="152"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </section>
 
-      <section class="card" aria-labelledby="destaques-heading">
-        <h2 id="destaques-heading">Destaques da trajetória</h2>
-        <ul class="highlights">
-          <li><strong>Música e composição:</strong> projeto independente com música disponível no Spotify.</li>
-          <li><strong>Entrevista:</strong> participação na Rádio Agricultura, no programa de Pedro Carcuro, falando sobre sua experiência no Chile e sua visão do mercado musical chileno.</li>
-          <li><strong>Eventos internacionais:</strong> trabalho na Gala de Viña del Mar de 2019, em Viña del Mar, Chile.</li>
-          <li><strong>Artes visuais:</strong> pintura tradicional a óleo sobre tela, com foco em composições botânicas e florais.</li>
-        </ul>
+      <section class="section">
+        <div class="panel">
+          <h2>Na mídia</h2>
+          <div class="media-grid">
+            <article class="media-card">
+              <h3>Rádio Agricultura</h3>
+              <p>Entrevista no programa de Pedro Carcuro, com conversa sobre a experiência no Chile e a visão do mercado musical chileno.</p>
+              <a href="https://www.youtube.com/shorts/4mH8A-KYArg" target="_blank" rel="noopener noreferrer">Assistir</a>
+            </article>
+
+            <article class="media-card">
+              <h3>Revista Sarah</h3>
+              <p>Matéria de contexto sobre a atuação internacional em eventos de prestígio e a presença de Rodrigo no cenário de gala e moda.</p>
+              <a href="https://www.revistasarah.cl/gala-caldirola-la-bella-espanola-que-chile/" target="_blank" rel="noopener noreferrer">Ler a matéria</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="panel">
+          <h2>Áreas de atuação</h2>
+          <ul class="list">
+            <li><strong>Música & Composição:</strong> criação e desenvolvimento de projeto independente com presença no Spotify.</li>
+            <li><strong>Eventos internacionais:</strong> atuação no Chile em bastidores e produção de imagem, estética e trabalho de equipe em grandes eventos.</li>
+            <li><strong>Artes visuais:</strong> pintura tradicional a óleo sobre tela, com forte sensibilidade estética e linguagem visual.</li>
+            <li><strong>Market / Visão cultural:</strong> entendimento do processo criativo e do mercado latino-americano, especialmente no contexto chileno.</li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 Rodrigo Bianco — Página oficial de referência e imprensa.</p>
+      © 2026 Rodrigo Bianco — Perfil de artista e trajetória profissional.
     </footer>
   </div>
 </body>
