@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rodrigo Bianco | Músico, Compositor e Artista Visual</title>
-  <meta name="description" content="Perfil de Rodrigo Bianco: músico, compositor, artista visual e hair stylist com trajetória internacional no Chile, participação na Rádio Agricultura e presença na mídia.">
+  <title>Rodrigo Bianco | Músico, Compositor e Hair Stylist</title>
+  <meta name="description" content="Músico independente, compositor, artista visual e hair stylist, Rodrigo Bianco reúne sua trajetória entre Brasil e Chile e sua música no Spotify.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0d1117">
   <link rel="canonical" href="https://rodrigobianco2012-lang.github.io/rodrigo-bianco/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rodrigo Bianco | Músico, Compositor e Artista Visual">
-  <meta property="og:description" content="Perfil de Rodrigo Bianco: música, arte visual, trabalho internacional no Chile e presença na imprensa.">
+  <meta property="og:site_name" content="Rodrigo Bianco">
+  <meta property="og:title" content="Rodrigo Bianco | Músico, Compositor e Hair Stylist">
+  <meta property="og:description" content="Músico independente, compositor, artista visual e hair stylist, Rodrigo Bianco reúne sua trajetória entre Brasil e Chile e sua música no Spotify.">
   <meta property="og:url" content="https://rodrigobianco2012-lang.github.io/rodrigo-bianco/">
   <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Rodrigo Bianco | Músico, Compositor e Artista Visual">
-  <meta name="twitter:description" content="Música, arte visual e trajetória profissional no Chile.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rodrigo Bianco | Músico, Compositor e Hair Stylist">
+  <meta name="twitter:description" content="Músico independente, compositor, artista visual e hair stylist, Rodrigo Bianco reúne sua trajetória entre Brasil e Chile e sua música no Spotify.">
 
   <script type="application/ld+json">
   {
@@ -24,45 +25,11 @@
     "@type": "Person",
     "@id": "https://rodrigobianco2012-lang.github.io/rodrigo-bianco/#person",
     "name": "Rodrigo Bianco",
-    "alternateName": "Rodrigo Bianco de Almeida",
-    "description": "Músico independente, compositor, artista visual e hair stylist brasileiro com trajetória profissional no Chile, presença na mídia e atuação em eventos de alto nível.",
+    "description": "Músico independente, compositor, artista visual e hair stylist com trajetória entre Brasil e Chile.",
     "url": "https://rodrigobianco2012-lang.github.io/rodrigo-bianco/",
-    "nationality": { "@type": "Country", "name": "Brazil" },
-    "homeLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Piedade",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
-      }
-    },
-    "knowsLanguage": ["pt-BR", "es-CL"],
-    "jobTitle": ["Músico", "Compositor", "Hair Stylist", "Artista Visual"],
-    "hasOccupation": [
-      {
-        "@type": "Occupation",
-        "name": "Músico e compositor",
-        "description": "Produção musical independente com catálogo no Spotify."
-      },
-      {
-        "@type": "Occupation",
-        "name": "Hair stylist",
-        "description": "Atuação profissional no Chile e participação em eventos de grande prestígio."
-      }
-    ],
-    "knowsAbout": [
-      "Música independente",
-      "Composição musical",
-      "Mercado musical chileno",
-      "Hair styling",
-      "Gala de Viña del Mar",
-      "Pintura a óleo"
-    ],
+    "jobTitle": ["Músico independente", "Compositor", "Artista visual", "Hair stylist"],
     "sameAs": [
-      "https://open.spotify.com/track/66XxcmmSkL57yxxc1ELytd",
-      "https://www.instagram.com/rodrigo_bianco2026",
-      "https://www.facebook.com/share/1AAv73fMHX/?mibextid=wwXIfr"
+      "https://www.instagram.com/rodrigo_bianco2026"
     ]
   }
   </script>
@@ -533,15 +500,15 @@
             </div>
           </div>
 
-          <div class="spotify-wrap" style="margin-top: 22px;">
-            <iframe
-              src="https://open.spotify.com/embed/track/66XxcmmSkL57yxxc1ELytd?utm_source=generator&theme=0"
-              title="Spotify — Rodrigo Bianco"
-              height="152"
-              loading="lazy"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="spotify-wrap" style="margin-top: 22px;" id="spotify-player">
+            <p class="spotify-notice">
+              O player só será carregado após sua ação. Ao carregá-lo, seu navegador se conecta ao Spotify,
+              sujeito à <a href="https://www.spotify.com/br-pt/legal/privacy-policy/">política de privacidade do Spotify</a>.
+            </p>
+            <button class="btn secondary" type="button" id="load-spotify">Carregar player do Spotify</button>
+            <noscript>
+              <p>Para ouvir sem carregar o player incorporado, <a href="https://open.spotify.com/track/66XxcmmSkL57yxxc1ELytd">abra a faixa no Spotify</a>.</p>
+            </noscript>
           </div>
         </div>
       </section>
@@ -580,7 +547,25 @@
 
     <footer>
       © 2026 Rodrigo Bianco — Perfil de artista e trajetória profissional.
+      <p>
+        Este site não oferece formulários nem usa ferramentas próprias de analytics. A hospedagem é fornecida pelo
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Pages</a>;
+        links e serviços externos têm políticas próprias.
+      </p>
     </footer>
   </div>
+  <script>
+    const spotifyButton = document.getElementById("load-spotify");
+    spotifyButton.addEventListener("click", () => {
+      const player = document.createElement("iframe");
+      player.src = "https://open.spotify.com/embed/track/66XxcmmSkL57yxxc1ELytd?theme=0";
+      player.title = "Spotify — Rodrigo Bianco";
+      player.height = "152";
+      player.loading = "lazy";
+      player.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+      player.allowFullscreen = true;
+      document.getElementById("spotify-player").replaceChildren(player);
+    }, { once: true });
+  </script>
 </body>
 </html>
