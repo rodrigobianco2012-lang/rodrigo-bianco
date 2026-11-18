@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#f4c95d" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#0b0f14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0f14"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1000" cy="315" r="210" fill="#141b24" stroke="#f4c95d" stroke-width="4"/>
+  <circle cx="1000" cy="315" r="170" fill="#0b0f14" stroke="#f4c95d" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="1000" y="355" text-anchor="middle" fill="#f4c95d" font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="800">RB</text>
+  <text x="110" y="250" fill="#edf2f7" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800">Rodrigo Bianco</text>
+  <text x="110" y="330" fill="#f5d98a" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">MÚSICA • ARTE • ESTÉTICA</text>
+  <text x="110" y="420" fill="#b1c0d2" font-family="Arial, Helvetica, sans-serif" font-size="30">Artista brasileiro — Brasil e Chile</text>
+  <line x1="110" y1="475" x2="760" y2="475" stroke="#f4c95d" stroke-opacity="0.55" stroke-width="3"/>
+</svg>
