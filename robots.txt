@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rodrigobianco2012-lang.github.io/rodrigo-bianco/sitemap.xml
