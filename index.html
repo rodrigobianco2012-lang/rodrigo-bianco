@@ -500,15 +500,15 @@
             </div>
           </div>
 
-          <div class="spotify-wrap" style="margin-top: 22px;">
-            <iframe
-              src="https://open.spotify.com/embed/track/66XxcmmSkL57yxxc1ELytd?utm_source=generator&theme=0"
-              title="Spotify — Rodrigo Bianco"
-              height="152"
-              loading="lazy"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="spotify-wrap" style="margin-top: 22px;" id="spotify-player">
+            <p class="spotify-notice">
+              O player só será carregado após sua ação. Ao carregá-lo, seu navegador se conecta ao Spotify,
+              sujeito à <a href="https://www.spotify.com/br-pt/legal/privacy-policy/">política de privacidade do Spotify</a>.
+            </p>
+            <button class="btn secondary" type="button" id="load-spotify">Carregar player do Spotify</button>
+            <noscript>
+              <p>Para ouvir sem carregar o player incorporado, <a href="https://open.spotify.com/track/66XxcmmSkL57yxxc1ELytd">abra a faixa no Spotify</a>.</p>
+            </noscript>
           </div>
         </div>
       </section>
@@ -547,7 +547,25 @@
 
     <footer>
       © 2026 Rodrigo Bianco — Perfil de artista e trajetória profissional.
+      <p>
+        Este site não oferece formulários nem usa ferramentas próprias de analytics. A hospedagem é fornecida pelo
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Pages</a>;
+        links e serviços externos têm políticas próprias.
+      </p>
     </footer>
   </div>
+  <script>
+    const spotifyButton = document.getElementById("load-spotify");
+    spotifyButton.addEventListener("click", () => {
+      const player = document.createElement("iframe");
+      player.src = "https://open.spotify.com/embed/track/66XxcmmSkL57yxxc1ELytd?theme=0";
+      player.title = "Spotify — Rodrigo Bianco";
+      player.height = "152";
+      player.loading = "lazy";
+      player.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+      player.allowFullscreen = true;
+      document.getElementById("spotify-player").replaceChildren(player);
+    }, { once: true });
+  </script>
 </body>
 </html>
